@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body:hover{
+    cursor: default;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 55vmin;
+    width: 50vmin;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) ;
+    border: 2px solid #d9dfe2;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0.8rem #201f1eda;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+form{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#username{
+    background-color: transparent;
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 2px solid #ffffffe7;
+    padding: 10px ;
+}
+#username:active{
+    border-color: #ffffffe7;    
+}
+
+#password{
+    background-color: transparent;
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 2px solid #ffffffe7;
+    padding: 10px ;
+}
+
+.storingContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkbox{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 5px;
+    color: #0f0f0f;
+}
+
+.forgotPassword a{
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.forgotPassword:hover{
+    text-decoration: underline #0f0f0f;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.submitButton{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submitButton button{
+    width: 80%;
+    border-radius: 2rem;
+    border: 2px solid #ffffffe7;
+    padding: 10px ;
+    opacity: 80%;
+}
+
+.submitButton button:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.signUp{
+    color: #000000;
+    font-size: 1.2rem;
+}
+.signUp a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.signUp a:hover{
+    text-decoration: underline #0f0f0f;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .container{
+        width: 85vmin;
+        height: 110vmin;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    .storingContainer{
+        font-size: 0.95rem
+    }
+    input::placeholder{
+        color: #0f0f0f;
+    }
+    .signUp{
+        font-size: 1rem;
+    }
+}
